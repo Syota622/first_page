@@ -93,39 +93,20 @@ body {
   font-weight: bold; /* 太文字に設定 */
 }
 @media (max-width: 600px) {
-  /* 自己紹介のレスポンシブ対応 */
+  /* 自己紹介の縦積み */
   .introduction {
-    flex-direction: column; /* コンテンツを縦積み */
-    text-align: center; /* テキストを中央寄せ */
+    flex-direction: column;
   }
   .introduction-image {
-    margin-left: 0; /* 画像の左マージンをリセット */
-    margin-top: 2%; /* 画像の上マージンを設定 */
-  }
-  .introduction-content,
-  .introduction-image {
-    width: 100%; /* コンテンツ幅を100%に設定 */
+    margin-left: 0;
   }
 
-  /* プロフィール画像のレスポンシブ対応 */
+  /* プロフィール画像の縦積み */
   .profile-section {
-    flex-direction: column; /* コンテンツを縦積み */
+    flex-direction: column;
+    align-items: center;
   }
   .profile {
-    width: 100%; /* コンテンツ幅を100%に設定 */
-  }
-
-  /* ヘッダーナビゲーションのレスポンシブ対応 */
-  .main-navigation .nav-list {
-    flex-direction: column; /* ナビゲーションアイテムを縦積み */
-  }
-  .nav-item {
-    text-align: center; /* ナビゲーションアイテムを中央寄せ */
-  }
-  .nav-item:nth-child(2) {
-    margin-right: 0; /* 余白のリセット */
-  }
-  .nav-item:nth-child(3) {
-    margin-left: 0; /* 余白のリセット */
+    width: 100%;
   }
 }
