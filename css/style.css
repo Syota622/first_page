@@ -102,5 +102,6 @@ body {
   }
   .profile {
     width: 100%;
+    margin-bottom: 20px; /* You may want to add some spacing between profiles */
   }
 }
